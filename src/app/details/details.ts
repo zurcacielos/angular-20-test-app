@@ -1,7 +1,7 @@
 import {Component, inject} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {HousingLocationInfo} from "../housinglocation";
-import {Housing} from "../housing";
+import {Housing} from "../housing-location/housing";
 
 @Component({
   selector: 'app-details',
