@@ -28,8 +28,10 @@ export class Home {
     housing: Housing = inject(Housing);
     filteredLocationList: HousingLocationInfo[] = [];
 
-    constructor() {
-        this.housingLocationList = this.housing.getAllHousingLocations();
+    constructor() {}
+
+    async ngOnInit() {
+        this.housingLocationList = await this.housing.getAllHousingLocations();
         this.filteredLocationList = this.housingLocationList;
     }
 

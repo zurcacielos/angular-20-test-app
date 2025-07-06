@@ -56,9 +56,11 @@ export class Details {
     email: new FormControl(''),
   })
 
-  constructor() {
+  constructor() {}
+
+  async ngOnInit() {
     const housingLocationId = Number(this.route.snapshot.params['id']);
-    this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
+    this.housingLocation = await this.housingService.getHousingLocationById(housingLocationId);
   }
 
   submitApplication() {
