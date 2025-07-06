@@ -130,6 +130,7 @@ export class Housing {
                 console.error('Error fetching housing locations:', error);
                 console.log('Using hardcoded housing locations instead, from now on.');
                 this.USE_JSON_SERVER=false;
+                // NOTE: we don't rethrow because we fall back below to hardcoded values.
             }
         }
 
@@ -148,6 +149,7 @@ export class Housing {
                 console.error('Failed to fetch housing location by ID:', error);
                 console.log('Using hardcoded housing locations instead, from now on.');
                 this.USE_JSON_SERVER=false;
+                // NOTE: we don't rethrow because we fall back below to hardcoded values.
             }
         }
 
