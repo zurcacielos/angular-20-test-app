@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {HousingLocationInfo} from "../housinglocation";
+import {HousingLocationInfo} from "../housing-location/housinglocation";
 import {Housing} from "../housing-location/housing";
 import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
 
