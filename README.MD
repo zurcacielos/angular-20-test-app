@@ -1,7 +1,7 @@
 # Angular 20 Test
 
 Basic Angular 20 app to show and filter properties.
-
+![picture-app.png](picture-app.png)
 ```cmd
 npm install
 
